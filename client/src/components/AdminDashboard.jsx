@@ -14,7 +14,7 @@ function AdminDashboard() {
     { value: s.subCount, label: "Submissions" },
     { value: s.userCount, label: "Total Users" },
   ];
-
+  
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <SiteHeader active="dashboard" />
