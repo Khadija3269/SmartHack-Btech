@@ -98,6 +98,7 @@ async function sendEmail({ to, subject, text, html }) {
   return info;
 }
 
+
 // ---- Auth ----
 app.post("/api/register", wrap(async (req, res) => {
   const { name, fullName, email, password, role, organization, bio, experience, reason, cvName, cvData } = req.body;
