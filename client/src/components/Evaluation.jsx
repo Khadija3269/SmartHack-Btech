@@ -14,7 +14,7 @@ const DEFAULTS = [
   { id: "design",        name: "Design",        weight: 5, description: "UI / UX quality and visual appeal." },
   { id: "functionality", name: "Functionality", weight: 5, description: "How well the project works." },
 ];
-
+//evaluate done by judge
 function loadCriteria() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
