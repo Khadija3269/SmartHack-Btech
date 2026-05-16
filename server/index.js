@@ -216,7 +216,6 @@ app.post("/api/forgot-password", wrap(async (req, res) => {
   if (!user) return res.status(400).json({ error: "No account found with that email." });
 
 
-
   const code = Math.floor(100000 + Math.random() * 900000).toString();
   await PasswordReset.deleteMany({ email: norm(email) });
   await PasswordReset.create({ email: norm(email), code, expiresAt: Date.now() + 15 * 60 * 1000 });
