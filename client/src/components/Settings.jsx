@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { currentUser, logout, updateProfile } from "@/lib/auth";
 import { deleteUser } from "@/lib/store";
 import { usePreferences } from "@/lib/preferences";
-
+//settings of our system
 function SettingsPage() {
   const navigate = useNavigate();
   const { t } = usePreferences();
