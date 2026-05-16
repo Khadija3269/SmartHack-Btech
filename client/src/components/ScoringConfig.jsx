@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const STORAGE_KEY = "smarthack.scoring.criteria";
-
+//scoring customization for admin
 const DEFAULTS = [
   { id: "innovation",    name: "Innovation",    weight: 5, description: "Originality and creativity of the idea." },
   { id: "design",        name: "Design",        weight: 5, description: "UI / UX quality and visual appeal." },
